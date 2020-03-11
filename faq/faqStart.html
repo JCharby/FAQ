@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Johns top 5 movies</title>
   <style type="text/css">
+    * {
+      /* border: 1px solid red; */
+    }
+
     /* h2 {
       color: blue;
     } */
@@ -20,9 +24,37 @@
       color: purple;
     }
 
-    .movie1{
-background-image: url(https://movieposters2.com/images/630270-b.jpg);
+    #faceoff {
+      background-image: url(https://movieposters2.com/images/630270-b.jpg);
+      background-size: 200px, 400px;
+      padding-left: 210px;
+    }
 
+    #conair {
+      background-image: url(https://images-na.ssl-images-amazon.com/images/I/51dl6VFcwgL._AC_.jpg);
+      background-size: 200px, 400px;
+      padding-left: 210px;
+    }
+
+    #natlt {
+      background-image: url(https://images-na.ssl-images-amazon.com/images/I/71XTSuBZ89L._AC_SY679_.jpg);
+      background-size: 200px, 400px;
+      padding-left: 210px;
+    }
+
+    #gone60 {
+      background-image: url(https://imgc.allpostersimages.com/img/print/u-g-F4S62Y0.jpg?w=550&h=550&p=0);
+      background-size: 200px, 400px;
+      padding-left: 210px;
+    }
+
+    .smilecage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+      width: 10%;
+      height: 10%;
     }
 
     h1 {
@@ -30,30 +62,23 @@ background-image: url(https://movieposters2.com/images/630270-b.jpg);
       font-size: 72px;
       font-family: fantasy;
       color: white;
-      margin-bottom: 150px;
-
-
-
-
-
-
-
-
-
+      /* margin-bottom: 50px; */
     }
 
     h2 {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 5px;
+      margin-top: 18px;
       text-align: center;
-      padding-top: 5px;
+      padding-top: 10px;
       padding-bottom: 5px;
       font-size: 35px;
-
+      /* border: 1px solid red; */
     }
 
     body {
+      display: flex;
+      flex-direction: column;
 
       background-image: url(https://storage.needpix.com/rsynced_images/canvas-3001165_1280.jpg);
       background-repeat: no-repeat;
@@ -61,9 +86,8 @@ background-image: url(https://movieposters2.com/images/630270-b.jpg);
       background-attachment: inherit;
       min-width: 500px;
       min-height: 600px;
-
-
-
+      border: 1px solid red;
+      margin-top: 1px;
 
     }
 
@@ -71,25 +95,23 @@ background-image: url(https://movieposters2.com/images/630270-b.jpg);
     p {
       padding-left: 210px;
       max-width: 1000px;
-      height: 200px;
+      height: 270px;
 
       margin: auto;
-      margin-top: 20px;
+      margin-top: 18px;
       font-size: 20px;
+      padding-bottom: 14px;
 
 
 
       /* max-width: 500px; */
-      background-image: url(https://www.placecage.com/200/400);
+      /* background-image: url(https://www.placecage.com/200/400); */
       background-repeat: no-repeat;
       background-position: left;
       background-color: white;
     }
 
-    section {
-
-
-    }
+    section {}
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
   <script type="text/javascript">
@@ -118,40 +140,46 @@ background-image: url(https://movieposters2.com/images/630270-b.jpg);
   </script>
 </head>
 
-<body>
-  <h1>John's top 5 nicolus cage movies</h1>
+<body id="hidecage" scroll="no" style="overflow: hidden">
+  <h1>My top 5 Nicolus Cage movies</h1>
   <main>
     <section>
-      <h2 class="open">MOVIE 1</h2>
-      <p id="movie" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      <h2 class="open">MOVIE #5</h2>
+      <p id="faceoff" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
         consequat. Duis aute
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section>
-      <h2 class="open">MOVIE 2</h2>
-      <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      <h2 class="open">MOVIE #4</h2>
+      <p id="conair" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
         consequat. Duis aute
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section>
-      <h2 class="open">MOVIE 3</h2>
-      <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      <h2 class="open">MOVIE #3</h2>
+      <p id="natlt" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
         consequat. Duis aute
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section>
-      <h2 class="open">MOVIE 4</h2>
-      <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      <h2 class="open">MOVIE #2</h2>
+      <p id="gone60" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
         consequat. Duis aute
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section>
-      <h2 class="open">MOVIE 5</h2>
-      <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      <h2 class="open">MOVIE #1</h2>
+      <p id="faceoff" class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo
         consequat. Duis aute
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
   </main>
+  <img class="smilecage" src="https://i.ya-webdesign.com/images/nicolas-cage-meme-png-2.png"">
 </body>
 
 </html>
